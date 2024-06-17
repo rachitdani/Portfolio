@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel= "stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7e40c497aa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id= "header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        
+        <div class="header-text">
+            <h1>Hello, I'm Rachit Dani <br>
+                <span>Data Scientist & Analyst</span> </h1> 
+        </div>
+        <a href="document/Rachit_Data_Science_CV.pdf" download class="btn btn2">Download CV</a>
+    </div>
+</div>
+<!-- ---------about---------- -->
+<div id = "about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/profile.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p><br>I am passionate about transforming complex datasets into actionable insights that drive strategic business decisions and solve real-world problems. With a solid foundation in statistical modeling, programming, and data visualization, I excel in analyzing large and diverse datasets to uncover trends, patterns, and correlations.
+
+                    <br><br>I hold a Data Analytics Specialization from Google and Bachelor of Engineering in Computer Science from the University of Mumbai. I am proficient in Python and SQL. My expertise includes using powerful tools like pandas, NumPy, scikit-learn, and Tableau to streamline data analysis processes and create compelling visualizations.
+                    
+                    <br><br>I specialize in data collection, advanced statistical techniques and machine learning algorithms to deliver insights that inform and enhance decision-making.
+                    
+                    <br><br>My goal is to collaborate with clients to leverage data effectively, driving growth and innovation. Explore my portfolio to see how my skills and expertise can help you achieve your business objectives. Let's work together to turn your data into a powerful asset for success.</p>
+                
+                <div class="tab-titles">
+                    <p class ="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class ="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class ="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Languages</span> : Python, SQL, HTML & Git</li>
+                        <li><span>Tools</span> : Jupyter notebook, Visual Studio, Github  & Google Colab</li>
+                        <li><span>Data Science</span> : Web Scraping, Data Wrangling & EDA</li>
+                        <li><span>Visualization Tools</span> : Tableau, PowerBi & Excel</li>
+                        <li><span>Mathematics for ML</span> : Statistics & Probability</li>
+                        <li><span>Machine Learning</span> : Supervised & Unsupervised Learning Algorithms, Computer Vision, NLP & LLMs </li>
+                        <li><span>Databases</span> : MySQL, MongoDB & Pinecone </li>
+                        <li><span>Deployments</span> : AWS, Azure, Streamlit & Huggingface </li>
+                        <li><span>Libraries</span> : numpy, pandas, scikit-learn, matplotlib, keras, tensorflow, beautifulsoup, selenium, flask, pytorch & langchain</li>
+
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id= "experience">
+                    <ul>
+                        <li><span>Data Specialist at CamCom</span>
+                            <br>(May 2024 - Present)
+                            <br>● Managed the monitoring of AI systems, conducting rigorous quality assurance checks and implementing corrective measures as required.
+                            <br>● Delivered constructive feedback to teams to optimize the performance and accuracy of AI systems.
+                        </li>
+                        <li><span>Data Scientist at Ineuron.ai</span>
+                            <br>(Jun 2023 - Mar 2024)
+                            <br>● Developed a Flipkart review scraper for web scraping and sentiment analysis, conducted EDA and data cleaning for various projects, and built predictive models for Diamond Price Prediction using data preprocessing and feature engineering.
+                            <br>● Managed end-to-end data science projects encompassing automated data ingestion and transformation, model training, cloud deployment, and contributed to deep learning projects in computer vision and natural language processing (NLP).
+                        </li>
+                        
+                        <li><span>Software Engineer at Komal Enterprises</span>
+                            <br>(Jun 2023 - Jan 2024) 
+                            <br>● Implemented Python scripts to automate business tasks, achieving a weekly time savings of over 10 hours.
+                            <br>● Gathered and analyzed tea auction data to conduct competitor analysis, utilizing advanced data analysis techniques.
+                        </li>
+                        <li><span>Data Analyst Intern at Trainity</span>
+                            <br>(Mar 2023 - May 2023)
+                            <br>● I conducted Exploratory Data Analysis (EDA) on diverse datasets, utilizing SQL, Microsoft Excel pivot tables, and Python for large-scale data which cultivated my ability to think critically as a data analyst.
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education" >
+                    <ul>
+                        <li><span>Bachelor of Engineering - Major in Computer Science</span>
+                            <br>2019 - 2023
+                            <br>Cumulative GPA: 8.74/10.0
+                            <br>● Relevant Coursework: Data Analysis, Software Engineering; Operating Systems; Algorithms; Artificial Intelligence
+                        </li>
+                        <li><span>Higher Secondary Examination - CBSE</span>
+                            <br>2017 - 2019
+                            <br>Board Exam Marks : 400/500
+                            <br>● Relevant Coursework: Computer Science, Mathematics, Programming, C++
+                            <br>● Obtained 97/100 in Computer Science at Board Exams
+                        </li>
+                        <li><span>Senior Secondary Examination - ICSE</span>
+                            <br>2017
+                            <br>Board Exam Marks : 512/600
+                            <br>● Obtained 98/100 in Computer Science & 93/100 in Mathematics at Board Exams
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------services----------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Scraping</h2>
+                <p>I offer comprehensive web scraping services to help businesses gather valuable data from various online sources. My solutions are tailored to your specific needs, ensuring data accuracy and integrity. Services include custom scripts, data cleaning, real-time automated updates, and seamless API integration.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-chart-line"></i>
+                <h2>Data Analysis</h2>
+                <p>My data analysis services help businesses uncover trends and insights to drive informed decision-making. Using advanced statistical techniques, I analyze large and diverse datasets to provide actionable recommendations. Services include summarizing and interpreting data for past performance, predicting future outcomes, identifying root causes of trends, and creating interactive dashboards for real-time monitoring and reporting.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <h2>Machine Learning</h2>
+                <p>I provide machine learning solutions to help businesses automate processes, enhance decision-making, and gain a competitive edge. My services include developing models for classification and regression, clustering and association techniques, NLP, deep learning tasks, working with large language models (LLMs), and ensuring high performance through model evaluation and optimization.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----portfolio---------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/book_recommendation_system.jpeg">
+                <div class="layer">
+                    <h3>Book Recommendation System</h3>
+                    <p>A streamlit app which uses Collaborative Filtering to recommend books to users based on interest</p>
+                    <a href="https://book-recommendersystem.streamlit.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/diamond_price_prediction.png">
+                <div class="layer">
+                    <h3>Diamond Price Prediction</h3>
+                    <p>A flask app which helps us predict the price of the diamond by using Machine Learning models on the input paramaters</p>
+                    <a href="https://github.com/rachitdani/Diamond-Price-Prediction-Project"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/whatsapp_chat_analyzer.png">
+                <div class="layer">
+                    <h3>Whatsapp Chat Analyser</h3>
+                    <p>A streamlit app to analyze your personal and group chats</p>
+                    <a href="https://whatsapp-chat-analyzer-project.streamlit.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/rachitdani/Projects" class="btn">See More</a>
+    </div>
+</div>
+
+<!-----contact---------->
+<div id = "contact">
+    <div class="container">
+        <div class = "row">
+            <div class ="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>rachitdani2014@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+91 8667279701</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/rachitdani/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/rachitdani"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://twitter.com/rachitdanii"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="mailto:rachitdani2014@gmail.com?subject=Contacting%20Via%20Portfolio%20Website"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                
+            </div>
+            <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright"> 
+        <p>Made with <i class="fa-solid fa-heart"></i> by Rachit Dani | <i class="fa-regular fa-copyright"></i> 2024 All rights reserved.</p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenuu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenuu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenuu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby_U4wgkrSk_TAyzNVAq9O4JPenSE6s8iH9p1KYbLKI3SH-7C8yX_hoG3DuwqMcs03vKA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML= "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML= ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
